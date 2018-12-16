@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'appointments/show'
+
+  get 'patients/index'
+
+  get 'patients/show'
+
+  get 'doctor/index'
+
+  get 'doctor_controller/index'
+
   resources :doctors
   resources :patients
   resources :appointments, only: [:show]
